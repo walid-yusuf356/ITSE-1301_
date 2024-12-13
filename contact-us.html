@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Nova: The Code Weaver</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo.png" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="main-header">
+      <img src="./images/image.png" alt="Nova Logo" class="logo" />
+      <h1>Nova: The Code Weaver</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./gallery.html">Team Gallery</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Contact Us</h2>
+      <div class="form-container">
+        <form name="contactForm" method="POST" action="success.html">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Type your message"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label>How did you hear about us?</label>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="reference"
+                    value="Internet"
+                    required
+                  />
+                  Internet
+                </label>
+                <label>
+                  <input type="radio" name="reference" value="Friend" />
+                  Friend
+                </label>
+                <label>
+                  <input type="radio" name="reference" value="Other" />
+                  Other
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="newsletter" value="Subscribe" />
+                Subscribe to our newsletter
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="inquiryType">Inquiry Type:</label>
+              <select id="inquiryType" name="inquiryType">
+                <option value="General">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+              </select>
+            </div>
+            <div class="form-group button-group">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bottom">
+      <p>&copy; 2024 Walid Yusuf. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
